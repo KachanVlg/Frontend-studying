@@ -17,7 +17,7 @@
     <div>
       <header>
         <div class="header-section section-class">
-          <a href="/lab1/lab1.html" class="logo">
+          <a href="/index.html" class="logo">
             <svg
               id="logo-34"
               width="155"
@@ -93,10 +93,12 @@
               ></path>
             </svg>
           </a>
-          <nav>
-            <li class="nav-li"><a href="/">Awesome SaaS Features</a></li>
-            <li class="nav-li"><a href="/">Pricing</a></li>
-            <li class="nav-li"><a href="/">Contact</a></li>
+          <nav aria-label="Main">
+            <ul class="nav-list">
+              <li class="nav-li"><a href="/">Awesome SaaS Features</a></li>
+              <li class="nav-li"><a href="/">Pricing</a></li>
+              <li class="nav-li"><a href="/">Contact</a></li>
+            </ul>
             <a href="/" class="sign-up custom-button">Sign Up</a>
           </nav>
           <div class="theme">
@@ -142,29 +144,24 @@
             </div>
           </section>
 
-          <section class="partners-section section-class">
+          <section class="partners-section section-class" aria-label="Official partners">
             <h3 class="partners-header">official partners with</h3>
-            <div class="swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="images/partner1.svg" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="images/partner2.svg" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="images/partner3.svg" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="images/partner4.svg" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="images/partner5.svg" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="images/partner6.svg" alt="">
-                </div>
-              </div>  
+            <div class="partners-marquee">
+              <ul class="marquee-track">
+                <li><img class="partners-logo" src="images/partner1.svg" alt="Partner 1"></li>
+                <li><img class="partners-logo" src="images/partner2.svg" alt="Partner 2"></li>
+                <li><img class="partners-logo" src="images/partner3.svg" alt="Partner 3"></li>
+                <li><img class="partners-logo" src="images/partner4.svg" alt="Partner 4"></li>
+                <li><img class="partners-logo" src="images/partner5.svg" alt="Partner 5"></li>
+                <li><img class="partners-logo" src="images/partner6.svg" alt="Partner 6"></li>
+
+                <li><img class="partners-logo" src="images/partner1.svg" alt="Partner 1"></li>
+                <li><img class="partners-logo" src="images/partner2.svg" alt="Partner 2"></li>
+                <li><img class="partners-logo" src="images/partner3.svg" alt="Partner 3"></li>
+                <li><img class="partners-logo" src="images/partner4.svg" alt="Partner 4"></li>
+                <li><img class="partners-logo" src="images/partner5.svg" alt="Partner 5"></li>
+                <li><img class="partners-logo" src="images/partner6.svg" alt="Partner 6"></li>
+              </ul>
             </div>
           </section>
 
@@ -186,8 +183,7 @@
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta
                 repellendus quia quos obcaecati nihil. Laudantium non
                 accusantium, voluptate eum nesciunt at suscipit quis est soluta?
-              </p>
-              </div>  
+              </div>
             </div>
           </section>
           <section class="product section-class">
@@ -208,147 +204,589 @@
               </ul>
               </div>
             </div>
-            <div class="product-text product-img2@">
+            <div class="product-text product-img-2">
               <img src="images/product2.svg" alt="switch theme" />
             </div>
           </section>
         </div>
 
         <div class="second-main-section">
-          <section class="divide-section">
-            <span>Lorem ipsum dolor sit amet</span>
-            <div class="divide-section-text-one">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Temporibus delectus?
-            </div>
-            <div class="divide-section-text-two">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-              beatae accusamus deleniti nihil quas tempora numquam, vitae culpa.
-            </div>
-            <div class="intro-buttons">
-              <a href="/" class="custom-button">
-                Subscribe to the newsletter
-                <span>→</span>
-              </a>
-              <a href="/" class="custom-button">
-                Features
-                <span>→</span>
-              </a>
+          <section class="cta-bridge" aria-label="Call to action">
+            <div class="cta-inner section-class">
+              <span class="cta-kicker">Lorem ipsum dolor sit amet</span>
+
+              <h2 class="cta-title">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Temporibus delectus?
+              </h2>
+
+              <p class="cta-sub">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda beatae
+                accusamus deleniti nihil quas tempora numquam, vitae culpa.
+              </p>
+
+              <div class="cta-actions">
+                <a href="/" class="cta-btn-primary">
+                  SUBSCRIBE TO THE NEWSLETTER <span>→</span>
+                </a>
+                <a href="/" class="cta-btn-outline">
+                  FEATURES <span>→</span>
+                </a>
+              </div>
             </div>
           </section>
 
-          <section class="features">
+          <section class="features section-class" id="features">
             <div class="features-header">
-              <span>features</span>
-              <div class="feature-header">What are you signing in for?</div>
+              <span class="features-kicker">FEATURES</span>
+              <h2 class="features-title">What are you signing in for?</h2>
             </div>
-            <div class="feature-tabs">
-              <div class="feature-tabs-tabs">
-                <div class="feature-tab">
-                  <div class="feature-tab-header">
-                    <div class="feature-tab-header-circle"></div>
-                    <h4>Find relevant media contacts - multiline title</h4>
+
+            <div class="features-wrap">
+              <div class="feature-list" role="presentation">
+                <button
+                        class="feature-item accent-red is-open"
+                        aria-expanded="true"
+                        aria-controls="feat-panel-1"
+                        id="feat-btn-1"
+                        data-image="images/feature-1.webp">
+                  <span class="feature-bullet"><span></span></span>
+                  <div class="feature-copy">
+                    <h4>Find relevant media contacts – multiline title</h4>
+                    <div class="feature-body" role="region" id="feat-panel-1" aria-labelledby="feat-btn-1">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quidem
+                        ipsam ratione dicta quis cupiditate consequuntur laborum ducimus iusto velit.
+                      </p>
+                    </div>
                   </div>
-                  <div class="feature-tab-info">
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Quibusdam quidem ipsam ratione dicta quis cupiditate
-                      consequuntur laborum ducimus iusto velit.
+                </button>
+
+                <button
+                        class="feature-item accent-blue"
+                        aria-expanded="false"
+                        aria-controls="feat-panel-2"
+                        id="feat-btn-2"
+                        data-image="images/feature-2.webp">
+                  <span class="feature-bullet"><span></span></span>
+                  <div class="feature-copy">
+                    <h4>Another amazing feature</h4>
+                    <div class="feature-body" role="region" id="feat-panel-2" aria-labelledby="feat-btn-2">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quidem
+                        ipsam ratione dicta quis cupiditate consequuntur laborum ducimus iusto velit.
+                      </p>
+                    </div>
+                  </div>
+                </button>
+
+                <button
+                        class="feature-item accent-green"
+                        aria-expanded="false"
+                        aria-controls="feat-panel-3"
+                        id="feat-btn-3"
+                        data-image="images/feature-3.webp">
+                  <span class="feature-bullet"><span></span></span>
+                  <div class="feature-copy">
+                    <h4>And yet… another truly fascinating feature</h4>
+                    <div class="feature-body" role="region" id="feat-panel-3" aria-labelledby="feat-btn-3">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quidem
+                        ipsam ratione dicta quis cupiditate consequuntur laborum ducimus iusto velit.
+                      </p>
+                    </div>
+                  </div>
+                </button>
+              </div>
+
+              <div class="feature-visual">
+                <img id="feature-visual" src="images/feature-1.webp" alt="Find relevant media contacts – multiline title">
+              </div>
+            </div>
+          </section>
+
+          <section class="gallery section-class" aria-label="Gallery">
+            <div class="gallery-grid">
+              <div class="gallery-card">
+                <img src="images/asset-1.svg" alt="Illustration 1" class="gallery-img" />
+                <h4 class="gallery-title">Lorem ipsum dolor sit amet.</h4>
+                <p class="gallery-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quidem ipsam ratione dicta quis cupiditate.</p>
+              </div>
+
+              <div class="gallery-card">
+                <img src="images/asset-2.svg" alt="Illustration 2" class="gallery-img" />
+                <h4 class="gallery-title">Lorem ipsum dolor sit amet.</h4>
+                <p class="gallery-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quidem ipsam ratione dicta quis cupiditate.</p>
+              </div>
+
+              <div class="gallery-card">
+                <img src="images/asset-3.svg" alt="Illustration 3" class="gallery-img" />
+                <h4 class="gallery-title">Lorem ipsum dolor sit amet.</h4>
+                <p class="gallery-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quidem ipsam ratione dicta quis cupiditate.</p>
+              </div>
+
+              <div class="gallery-card">
+                <img src="images/asset-4.svg" alt="Illustration 4" class="gallery-img" />
+                <h4 class="gallery-title">Lorem ipsum dolor sit amet.</h4>
+                <p class="gallery-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quidem ipsam ratione dicta quis cupiditate.</p>
+              </div>
+
+              <div class="gallery-card">
+                <img src="images/asset-5.svg" alt="Illustration 5" class="gallery-img" />
+                <h4 class="gallery-title">Lorem ipsum dolor sit amet.</h4>
+                <p class="gallery-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quidem ipsam ratione dicta quis cupiditate.</p>
+              </div>
+
+              <div class="gallery-card">
+                <img src="images/asset-6.svg" alt="Illustration 6" class="gallery-img" />
+                <h4 class="gallery-title">Lorem ipsum dolor sit amet.</h4>
+                <p class="gallery-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quidem ipsam ratione dicta quis cupiditate.</p>
+              </div>
+
+              <div class="gallery-card">
+                <img src="images/asset-7.svg" alt="Illustration 7" class="gallery-img" />
+                <h4 class="gallery-title">Lorem ipsum dolor sit amet.</h4>
+                <p class="gallery-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quidem ipsam ratione dicta quis cupiditate.</p>
+              </div>
+
+              <div class="gallery-card">
+                <img src="images/asset-8.svg" alt="Illustration 8" class="gallery-img" />
+                <h4 class="gallery-title">Lorem ipsum dolor sit amet.</h4>
+                <p class="gallery-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quidem ipsam ratione dicta quis cupiditate.</p>
+              </div>
+
+              <div class="gallery-card">
+                <img src="images/asset-9.svg" alt="Illustration 9" class="gallery-img" />
+                <h4 class="gallery-title">Lorem ipsum dolor sit amet.</h4>
+                <p class="gallery-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quidem ipsam ratione dicta quis cupiditate.</p>
+              </div>
+            </div>
+          </section>
+
+
+          <section class="testimonials" aria-label="Testimonials" tabindex="0">
+            <div class="testi-inner">
+              <button class="testi-nav prev" aria-label="Previous testimonial" type="button">
+                <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill="currentColor" d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                </svg>
+              </button>
+
+              <div class="testi-viewport" aria-roledescription="carousel">
+                <ul class="testi-track" role="list">
+                  <li class="testi-slide" role="group" aria-label="1 of 3" aria-hidden="false">
+                    <img class="testi-logo" src="images/company-logo-1.svg" alt="Company 1 logo">
+                    <blockquote class="testi-quote">
+                      «Really good. I am so pleased with this product. I didn't even need training.»
+                    </blockquote>
+                    <div class="testi-author">
+                      <img class="testi-avatar" src="images/author-photo-1.webp" alt="Clyde Edwards photo" loading="lazy">
+                      <div class="testi-meta">
+                        <div class="testi-name">Clyde Edwards</div>
+                        <div class="testi-role">Head of Product, Company 1</div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="testi-slide" role="group" aria-label="2 of 4" aria-hidden="true">
+                    <img class="testi-logo" src="images/company-logo-2.svg" alt="Company 2 logo">
+                    <blockquote class="testi-quote">
+                      «It's really wonderful. I use saas product often. Thank You! Saas product has really helped our business.»
+                    </blockquote>
+                    <div class="testi-author">
+                      <img class="testi-avatar" src="images/author-photo-2.webp" alt="Amelia Stone photo" loading="lazy">
+                      <div class="testi-meta">
+                        <div class="testi-name">Amelia Stone</div>
+                        <div class="testi-role">CMO, Company 2</div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="testi-slide" role="group" aria-label="3 of 4" aria-hidden="true">
+                    <img class="testi-logo" src="images/company-logo-3.svg" alt="Company 3 logo">
+                    <blockquote class="testi-quote">
+                      «Since I invested in saas product I made over 100,000 dollars profits. It really saves me time and effort. saas product is exactly what our business has been lacking.»
+                    </blockquote>
+                    <div class="testi-author">
+                      <img class="testi-avatar" src="images/author-photo-3.webp" alt="Noah Patel photo" loading="lazy">
+                      <div class="testi-meta">
+                        <div class="testi-name">Noah Patel</div>
+                        <div class="testi-role">VP Operations, Company 3</div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <button class="testi-nav next" aria-label="Next testimonial" type="button">
+                <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill="currentColor" d="M8.59 7.41 13.17 12 8.59 16.59 10 18l6-6-6-6-1.41 1.41z"/>
+                </svg>
+              </button>
+            </div>
+          </section>
+
+
+          <section class="cards-carousel" aria-label="Cards Carousel">
+            <div class="cards-carousel-header section-class">
+              <span class="cc-kicker">features</span>
+              <h2 class="cc-title">What are you signing in for?</h2>
+            </div>
+
+            <div class="cc-scroller" id="cc-scroller">
+              <div class="cc-track">
+                <article class="cc-card">
+                  <div class="cc-media">
+                    <img src="images/example-image.webp" alt="" draggable="false">
+                  </div>
+                  <div class="cc-content">
+                    <h4 class="cc-card-title">Lorem ipsum dolor sit amet.</h4>
+                    <p class="cc-card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis error dolorem ipsa dolore facere est consequuntur aut, eos doloribus voluptate?
                     </p>
                   </div>
-                </div>
-              </div>
-              <img src="switch-theme-light.png" alt="switch theme" />
-            </div>
-          </section>
+                </article>
 
-          <section class="grid-section">
-            <div class="grid-container">
-              <div class="grid-element">
-                <img src="switch-theme-light.png" alt="switch theme" />
-                <div class="grid-text-one"></div>
-                <div class="grid-text-two"></div>
-              </div>
-            </div>
-          </section>
-
-          <section class="clients">
-            <div class="swap-zone">
-              <div class="clients-div">
-                <img src="switch-theme-light.png" alt="switch theme" />
-                <blockquote></blockquote>
-                <div class="author">
-                  <img src="switch-theme-light.png" alt="switch theme" />
-                  <div class="author-info">
-                    <p class="name"></p>
-                    <p class="role"></p>
+                <article class="cc-card">
+                  <div class="cc-media">
+                    <img src="images/example-image.webp" alt="" draggable="false">
                   </div>
-                </div>
+                  <div class="cc-content">
+                    <h4 class="cc-card-title">Lorem ipsum dolor sit amet.</h4>
+                    <p class="cc-card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis error dolorem ipsa dolore facere est consequuntur aut, eos doloribus voluptate?
+                    </p>
+                  </div>
+                </article>
+
+                <article class="cc-card">
+                  <div class="cc-media">
+                    <img src="images/example-image.webp" alt="" draggable="false">
+                  </div>
+                  <div class="cc-content">
+                    <h4 class="cc-card-title">Lorem ipsum dolor sit amet.</h4>
+                    <p class="cc-card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis error dolorem ipsa dolore facere est consequuntur aut, eos doloribus voluptate?
+                    </p>
+                  </div>
+                </article>
+
+                <article class="cc-card">
+                  <div class="cc-media">
+                    <img src="images/example-image.webp" alt="" draggable="false">
+                  </div>
+                  <div class="cc-content">
+                    <h4 class="cc-card-title">Lorem ipsum dolor sit amet.</h4>
+                    <p class="cc-card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis error dolorem ipsa dolore facere est consequuntur aut, eos doloribus voluptate?
+                    </p>
+                  </div>
+                </article>
+
+                <article class="cc-card">
+                  <div class="cc-media">
+                    <img src="images/example-image.webp" alt="" draggable="false">
+                  </div>
+                  <div class="cc-content">
+                    <h4 class="cc-card-title">Lorem ipsum dolor sit amet.</h4>
+                    <p class="cc-card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis error dolorem ipsa dolore facere est consequuntur aut, eos doloribus voluptate?
+                    </p>
+                  </div>
+                </article>
+
+                <article class="cc-card">
+                  <div class="cc-media">
+                    <img src="images/example-image.webp" alt="" draggable="false">
+                  </div>
+                  <div class="cc-content">
+                    <h4 class="cc-card-title">Lorem ipsum dolor sit amet.</h4>
+                    <p class="cc-card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis error dolorem ipsa dolore facere est consequuntur aut, eos doloribus voluptate?
+                    </p>
+                  </div>
+                </article>
               </div>
             </div>
           </section>
 
-          <section class="carousel-scetion">
-            <div class="carousel-header">
-              <span>features</span>
-              <div>What are you signing in for?</div>
-            </div>
-            <div class="carousel">
-              <a class="card">
-                <div class="card-container">
-                  <img src="switch-theme-light.png" alt="switch theme" />
-                  <h4></h4>
-                  <p></p>
-                </div>
-              </a>
-            </div>
-          </section>
-
-          <img src="switch-theme-light.png" alt="switch theme" />
+          <img src="images/switch-theme-light.png" alt="switch theme" />
         </div>
 
-        <section class="divide-section">
-          <span>Lorem ipsum dolor sit amet</span>
-          <div class="divide-section-text-one">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus
-            delectus?
-          </div>
-          <div class="divide-section-text-two">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-            beatae accusamus deleniti nihil quas tempora numquam, vitae culpa.
-          </div>
-          <div class="intro-buttons">
-            <a href="/" class="custom-button">
-              Subscribe to the newsletter
-              <span>→</span>
-            </a>
-            <a href="/" class="custom-button">
-              Features
-              <span>→</span>
-            </a>
+        <section class="final-cta" aria-label="Final call to action">
+          <svg class="final-cta-wave" viewBox="0 0 1440 220" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M0,140 C260,110 520,70 800,105 C1030,133 1260,125 1440,55 L1440,0 L0,0 Z"></path>
+          </svg>
+
+          <div class="final-cta-inner">
+            <h2 class="final-cta-title">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus delectus?
+            </h2>
+
+            <div class="final-cta-actions">
+              <a href="/" class="final-cta-btn final-cta-primary">
+                SUBSCRIBE TO THE NEWSLETTER <span>→</span>
+              </a>
+              <a href="/" class="final-cta-btn final-cta-outline">
+                FEATURES <span>→</span>
+              </a>
+            </div>
           </div>
         </section>
+
       </main>
 
-      <footer>
-        <section class="footer-info-section">
-          <div class="footer-about">
-            <div class="footer-about-element">
-              <p></p>
-              <a></a>
-              <a></a>
+      <footer class="footer" aria-label="Footer">
+        <div class="section-class footer-wrap">
+          <div class="footer-grid">
+            <div class="f-col">
+              <h4 class="f-title">Company</h4>
+              <ul class="f-list">
+                <li class="f-item">Privacy Policy</li>
+                <li class="f-item">Cookies Policy</li>
+              </ul>
+            </div>
+
+            <div class="f-col">
+              <h4 class="f-title">Product</h4>
+              <ul class="f-list">
+                <li class="f-item">Features</li>
+                <li class="f-item">Something</li>
+                <li class="f-item">Something else</li>
+                <li class="f-item">And something else</li>
+              </ul>
+            </div>
+
+            <div class="f-col">
+              <h4 class="f-title">Knowledge</h4>
+              <ul class="f-list">
+                <li class="f-item">Blog</li>
+                <li class="f-item">Contact</li>
+                <li class="f-item">FAQ</li>
+                <li class="f-item">Help Center</li>
+              </ul>
+            </div>
+
+            <div class="f-col">
+              <h4 class="f-title">Something</h4>
+              <ul class="f-list">
+                <li class="f-item">Features2</li>
+                <li class="f-item">Something2</li>
+                <li class="f-item">Something else2</li>
+                <li class="f-item">And something else2</li>
+              </ul>
             </div>
           </div>
-          <div class="footer-contact">
-            <div class="footer-social-media">
-              <img src="switch-theme-light.png" alt="switch theme" />
-              <img src="switch-theme-light.png" alt="switch theme" />
-              <img src="switch-theme-light.png" alt="switch theme" />
+
+          <div class="footer-bottom">
+            <div class="f-social">
+              <svg viewBox="0 0 64 64" width="50" height="50"><circle cx="32" cy="32" r="31" fill="#00aced"></circle><path d="M48,22.1c-1.2,0.5-2.4,0.9-3.8,1c1.4-0.8,2.4-2.1,2.9-3.6c-1.3,0.8-2.7,1.3-4.2,1.6 C41.7,19.8,40,19,38.2,19c-3.6,0-6.6,2.9-6.6,6.6c0,0.5,0.1,1,0.2,1.5c-5.5-0.3-10.3-2.9-13.5-6.9c-0.6,1-0.9,2.1-0.9,3.3 c0,2.3,1.2,4.3,2.9,5.5c-1.1,0-2.1-0.3-3-0.8c0,0,0,0.1,0,0.1c0,3.2,2.3,5.8,5.3,6.4c-0.6,0.1-1.1,0.2-1.7,0.2c-0.4,0-0.8,0-1.2-0.1 c0.8,2.6,3.3,4.5,6.1,4.6c-2.2,1.8-5.1,2.8-8.2,2.8c-0.5,0-1.1,0-1.6-0.1c2.9,1.9,6.4,2.9,10.1,2.9c12.1,0,18.7-10,18.7-18.7 c0-0.3,0-0.6,0-0.8C46,24.5,47.1,23.4,48,22.1z" fill="white"></path></svg>
+              <svg viewBox="0 0 64 64" width="50" height="50"><circle cx="32" cy="32" r="31" fill="#3b5998"></circle><path d="M34.1,47V33.3h4.6l0.7-5.3h-5.3v-3.4c0-1.5,0.4-2.6,2.6-2.6l2.8,0v-4.8c-0.5-0.1-2.2-0.2-4.1-0.2 c-4.1,0-6.9,2.5-6.9,7V28H24v5.3h4.6V47H34.1z" fill="white"></path></svg>
+              <svg viewBox="0 0 64 64" width="50" height="50"><circle cx="32" cy="32" r="31" fill="#007fb1"></circle><path d="M20.4,44h5.4V26.6h-5.4V44z M23.1,18c-1.7,0-3.1,1.4-3.1,3.1c0,1.7,1.4,3.1,3.1,3.1 c1.7,0,3.1-1.4,3.1-3.1C26.2,19.4,24.8,18,23.1,18z M39.5,26.2c-2.6,0-4.4,1.4-5.1,2.8h-0.1v-2.4h-5.2V44h5.4v-8.6 c0-2.3,0.4-4.5,3.2-4.5c2.8,0,2.8,2.6,2.8,4.6V44H46v-9.5C46,29.8,45,26.2,39.5,26.2z" fill="white"></path></svg>
             </div>
-            <p>© Copyright 2021 My Saas Startup</p>
+
+            <p class="f-copy">© Copyright 2021 My Saas Startup</p>
           </div>
-        </section>
+        </div>
       </footer>
+
     </div>
   </body>
+  <script>
+    (function() {
+      const root = document.body;
+      const btn = document.getElementById('theme-toggle');
+
+      function applyTheme(theme){
+        root.classList.remove('next-light-theme','next-dark-theme');
+        root.classList.add(theme);
+      }
+
+      function changeThemeIcon (theme) {
+        if (theme === 'light') {
+          btn.innerHTML = `
+                <svg width="24" height="24" viewBox="0 0 24 24" focusable="false">
+                    <path fill="currentColor" d="M21.4,13.7C20.6,13.9,19.8,14,19,14c-5,0-9-4-9-9c0-0.8,0.1-1.6,0.3-2.4c0.1-0.3,0-0.7-0.3-1 c-0.3-0.3-0.6-0.4-1-0.3C4.3,2.7,1,7.1,1,12c0,6.1,4.9,11,11,11c4.9,0,9.3-3.3,10.6-8.1c0.1-0.3,0-0.7-0.3-1 C22.1,13.7,21.7,13.6,21.4,13.7z"></path>
+                </svg>`;
+        }
+        else {
+          btn.innerHTML = `
+                <svg width="24" height="24" viewBox="0 0 24 24" focusable="false">
+                    <g stroke-linejoin="round" stroke-linecap="round" stroke-width="2" fill="none" stroke="currentColor">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <path d="M12 1v2"></path>
+                        <path d="M12 21v2"></path>
+                        <path d="M4.22 4.22l1.42 1.42"></path>
+                        <path d="M18.36 18.36l1.42 1.42"></path>
+                        <path d="M1 12h2"></path>
+                        <path d="M21 12h2"></path>
+                        <path d="M4.22 19.78l1.42-1.42"></path>
+                        <path d="M18.36 5.64l1.42-1.42"></path>
+                    </g>
+                </svg>`;
+        }
+      }
+
+      btn?.addEventListener('click', () => {
+        const isDark = root.classList.contains('next-dark-theme');
+        applyTheme(isDark ? 'next-light-theme' : 'next-dark-theme');
+        changeThemeIcon(isDark ? 'light': 'dark');
+      });
+
+    })();
+  </script>
+  <script>
+    (function () {
+      const items  = document.querySelectorAll('.feature-item');
+      const visual = document.getElementById('feature-visual');
+
+      function setBodyHeight(el, open){
+        if(!el) return;
+        if(open){
+          el.style.height = 'auto';
+          const h = el.scrollHeight + 'px';
+          el.style.height = '0px';
+          requestAnimationFrame(()=>{ el.style.height = h; });
+          el.addEventListener('transitionend', function te(e){
+            if(e.propertyName === 'height'){
+              el.style.height = 'auto';
+              el.removeEventListener('transitionend', te);
+            }
+          });
+        } else {
+          const current = el.offsetHeight;
+          el.style.height = current + 'px';
+          requestAnimationFrame(()=>{ el.style.height = '0px'; });
+        }
+      }
+
+      function openItem(btn){
+        items.forEach(it => {
+          const body = it.querySelector('.feature-body');
+          if(it === btn){
+            it.classList.add('is-open');
+            it.setAttribute('aria-expanded','true');
+            setBodyHeight(body, true);
+          } else {
+            it.classList.remove('is-open');
+            it.setAttribute('aria-expanded','false');
+            setBodyHeight(body, false);
+          }
+        });
+
+        const img = btn.getAttribute('data-image');
+        if(img && visual){
+          visual.src = img;
+          const title = btn.querySelector('h4')?.textContent || 'Feature preview';
+          visual.alt = title;
+        }
+      }
+
+      items.forEach(btn => {
+        btn.addEventListener('click', () => {
+          if(btn.classList.contains('is-open')) return;
+          openItem(btn);
+        });
+      });
+
+      openItem(document.querySelector('.feature-item') || items[0]);
+    })();
+  </script>
+  <script>
+    (function(){
+      const root   = document.querySelector('.testimonials');
+      if(!root) return;
+
+      const viewport = root.querySelector('.testi-viewport');
+      const track    = root.querySelector('.testi-track');
+      const slides   = Array.from(root.querySelectorAll('.testi-slide'));
+      const prevBtn  = root.querySelector('.testi-nav.prev');
+      const nextBtn  = root.querySelector('.testi-nav.next');
+
+      let index = 0;
+
+      function update(){
+        const offset = -index * 100;
+        track.style.transform = `translateX(${offset}%)`;
+        slides.forEach((el, i) => {
+          el.setAttribute('aria-hidden', i === index ? 'false' : 'true');
+          el.setAttribute('aria-label', `${i+1} of ${slides.length}`);
+        });
+      }
+
+      function prev(){ index = (index - 1 + slides.length) % slides.length; update(); }
+      function next(){ index = (index + 1) % slides.length; update(); }
+
+      prevBtn.addEventListener('click', prev);
+      nextBtn.addEventListener('click', next);
+
+      update();
+    })();
+  </script>
+  <script>
+    (function(){
+      const scroller = document.getElementById('cc-scroller');
+      if(!scroller) return;
+
+      let dragging = false;
+      let startX = 0;
+      let startLeft = 0;
+
+      function snapToNearest(){
+        const cards = scroller.querySelectorAll('.cc-card');
+        if(!cards.length) return;
+
+        const scrollerRect = scroller.getBoundingClientRect();
+        const scrollerCenter = scrollerRect.left + scrollerRect.width / 2;
+
+        let best = null;
+        let bestDist = Infinity;
+
+        cards.forEach(card => {
+          const rect = card.getBoundingClientRect();
+          const cardCenter = rect.left + rect.width / 2;
+          const dist = Math.abs(cardCenter - scrollerCenter);
+          if(dist < bestDist){
+            bestDist = dist;
+            best = card;
+          }
+        });
+
+        if(best){
+          const rect = best.getBoundingClientRect();
+          const cardCenter = rect.left + rect.width / 2;
+          const delta = cardCenter - scrollerCenter;
+          scroller.scrollTo({ left: scroller.scrollLeft + delta, behavior: 'smooth' });
+        }
+      }
+
+      scroller.addEventListener('pointerdown', (e) => {
+        dragging = true;
+        scroller.classList.add('dragging');
+        scroller.setPointerCapture(e.pointerId);
+        startX = e.clientX;
+        startLeft = scroller.scrollLeft;
+      });
+
+      scroller.addEventListener('pointermove', (e) => {
+        if(!dragging) return;
+        e.preventDefault();
+        const dx = e.clientX - startX;
+        scroller.scrollLeft = startLeft - dx;
+      }, { passive: false });
+
+      function end(e){
+        if(!dragging) return;
+        dragging = false;
+        scroller.classList.remove('dragging');
+        try { scroller.releasePointerCapture(e.pointerId); } catch(_) {}
+        snapToNearest();
+      }
+      scroller.addEventListener('pointerup', end);
+      scroller.addEventListener('pointerleave', end);
+      scroller.addEventListener('pointercancel', end);
+    })();
+  </script>
+
+
 </html>
